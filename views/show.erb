@@ -1,7 +1,7 @@
 <h2><%= h(@memo['title']) %></h2>
 <p><%= h(@memo['content']) %></p>
-<a href="/memos/<%= h(@id) %>/edit" class="button">変更</a>
-<form action="/memos/<%= h(@id) %>" method="post" style="display:inline">
+<a href="/memos/<%= @id %>/edit" class="button">変更</a>
+<form action="/memos/<%= @id %>" method="post" class="inline-form">
   <input type="hidden" name="_method" value="delete">
   <button type="submit">削除</button>
 </form>

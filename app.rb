@@ -37,7 +37,6 @@ post '/memos' do
   memos = load_memos
   id = SecureRandom.uuid
   memos[id] = { 'title' => params[:title], 'content' => params[:content] }
-  p memos
   save_memos(memos)
   redirect 'memos'
 end

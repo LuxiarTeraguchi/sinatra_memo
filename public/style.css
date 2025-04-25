@@ -2,10 +2,14 @@ body {
   padding: .5em 1em;
 }
 
+.inline-form {
+  display: inline;
+}
+
 input[type=text],
 textarea {
   width: 20em;
-  background-color: #ececec;
+  background-color: #ffffff;
   margin-bottom: .5em;
   border: solid 1px #c1c1c1;
   border-radius: 4px;
